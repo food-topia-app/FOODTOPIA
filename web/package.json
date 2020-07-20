@@ -1,0 +1,39 @@
+{
+	"name": "Foodtopia",
+	"version": "1.0.0",
+	"description": "Admin portal for Foodtopia mobile app.",
+	"main": "server.js",
+	"scripts": {
+		"client": "npm start --prefix client",
+		"deploy": "npm run build --prefix client && gcloud app deploy",
+		"dev": "concurrently \"npm run server\" \"npm run client\"",
+		"server": "nodemon server.js",
+		"build": "npm run build --prefix client"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+ssh://git@gitlab.com/hexify/Foodtopia.git"
+	},
+	"keywords": [],
+	"author": "Jeswill Paulose",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://gitlab.com/hexify/Foodtopia/issues"
+	},
+	"homepage": "https://gitlab.com/hexify/Foodtopia#readme",
+	"dependencies": {
+		"axios": "^0.19.2",
+		"bcryptjs": "^2.4.3",
+		"config": "^3.3.1",
+		"express": "^4.17.1",
+		"express-validator": "^6.4.0",
+		"firebase-admin": "^8.10.0",
+		"jsonwebtoken": "^8.5.1",
+		"mongoose": "^5.9.6",
+		"multer": "^1.4.2"
+	},
+	"devDependencies": {
+		"concurrently": "^5.1.0",
+		"nodemon": "^2.0.2"
+	}
+}

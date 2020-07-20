@@ -1,0 +1,113 @@
+footer a {
+	color: inherit;
+}
+
+input:focus {
+	outline: none;
+}
+
+main {
+	padding: 24px;
+}
+
+.mdl-card__image {
+	background-color: #e0e0e0;
+	background-position: center;
+	background-size: cover;
+	height: 180px;
+	width: 100%;
+}
+
+.mdl-layout__content {
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+}
+
+.mdl-textfield--floating-label.is-half-focused .mdl-textfield__label {
+	color: rgb(63, 81, 181);
+	font-size: 12px;
+	top: 4px;
+	visibility: visible;
+}
+
+.errorBox {
+	background: #ef5350;
+	color: #fff;
+	margin-bottom: 24px;
+	padding: 12px;
+}
+
+.errorBox.success {
+	background: #8bc34a;
+}
+
+.errorBox p {
+	margin: 0px;
+}
+
+#branchList,
+#orderList,
+#productList,
+#serviceList {
+	display: block;
+	width: 100%;
+}
+
+#branchList .branch,
+#productList .product,
+#serviceList .product,
+#orderList .order {
+	display: inline-block;
+	margin: 12px;
+	text-align: left;
+	vertical-align: top;
+}
+
+#productList .product img,
+#serviceList .product img {
+	width: 120px;
+}
+
+#productList .mdl-card__supporting-text {
+	height: 180px;
+	overflow-y: auto;
+}
+
+#orderList .mdl-card__supporting-text {
+	height: 264px;
+	overflow-y: auto;
+}
+
+#spinner {
+	align-items: center;
+	background: #00000077;
+	color: #fff;
+	display: flex;
+	height: 100%;
+	justify-content: center;
+	left: 0px;
+	position: fixed;
+	top: 0px;
+	width: 100%;
+	z-index: 1000;
+}
+
+@media screen and (max-width: 1024px) {
+	.mdl-layout__header {
+		display: -webkit-flex;
+		display: -ms-flexbox;
+		display: flex;
+	}
+	.mdl-layout__header .mdl-navigation {
+		display: none;
+	}
+	.mdl-layout__drawer-button {
+		color: rgb(255, 255, 255);
+	}
+	.mdl-layout__container.has-scrolling-header .mdl-layout__content {
+		overflow-y: visible;
+		overflow-x: visible;
+	}
+}
